@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Felipe Hernández — Penn State</title>
+    <meta name="description" content="Academic homepage for Felipe Hernández, Assistant Professor at Penn State. Mathematical physics, quantum diffusion, analysis.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="identity">
+          <h1>Felipe Hernández</h1>
+          <p class="subtitle">Assistant Professor, Penn State University</p>
+        </div>
+        <nav class="links">
+          <a class="btn" href="https://scholar.google.com/citations?user=RqyoME4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="intro card">
+        <p>
+          I am mathematical physicist interested in understanding the emergence of large-scale physics (which is diffusive, dissipative, and classical) from microscopic physics (which is time-reversible and classical).  I am also
+          interested in computational aspects of quantum mechanics (when is it easy to simulate physics, and when is it hard?)
+        </p>
+        <p>I completed my PhD in 2023 at Stanford University, advised by Lenya Ryzhik.  In 2023-2024 I was a CLE Moore Instructor and NSF Postdoctoral Fellow at MIT.
+        </p>
+      </section>
+
+      <section id="gallery" class="card">
+        <div class="gallery">
+          <figure>
+              <a href="https://arxiv.org/abs/2506.06468" rel="noopener" aria-label="Self-Consistent equations">
+                <img src="assets/quantum-diffusion.png" alt="A simulation of diffusive behavior in the Anderson model.">
+              </a>
+            <figcaption>Self-consistent equations and quantum diffusion for the Anderson model</figcaption>
+          </figure>
+          <figure>
+                <a href="https://arxiv.org/abs/2505.01341" aria-label="Diffusivity of the Lorentz mirror walk">
+                    <img src="assets/pinball-walk.png" alt="A simulation of the Lorentz mirror walk in two dimensions">
+                </a>
+            <figcaption>Diffusivity of the Lorentz mirror walk in high dimensions</figcaption>
+          </figure>
+          <figure>
+                <a href="https://arxiv.org/abs/2502.02566" aria-label="Tail bounds for Dyson series">
+                <img src="assets/floquet-eigenfunction.png" alt="An eigenfunction of a spatially random and time-periodic Schrodinger equation">
+                </a>
+            <figcaption>Tail bounds for the Dyson series of random Schrödinger equations</figcaption>
+          </figure>
+          <figure>
+              <a href="https://arxiv.org/abs/2306.13717" target="_blank" rel="noopener" aria-label="Open quantum systems paper">
+                <img src="assets/open-system-wigner.png" alt="Comparison of classical phase space density and Wigner function in open and closed quantum systems">
+              </a>
+            <figcaption>Ehrenfest's theorem beyond the Ehrenfest time </figcaption>
+          </figure>
+            <figure>
+              <a href="https://arxiv.org/abs/2411.04566" target="_blank" rel="noopener">
+                <img src="assets/dilution.png" alt="Dilution argument for BosonSampling">
+              </a>
+              <figcaption>Exponential improvements to the average-case hardness of BosonSampling </figcaption>
+            </figure>
+            <figure>
+                <a href="https://arxiv.org/abs/2206.12998" alt="Diagrams in quantum diffusion">
+                <img src="assets/diagrams.png" alt="Diagram in quantum diffusion">
+                </a>
+                <figcaption>Quantum Diffusion via an Approximate Semigroup Property</figcaption>
+            </figure>
+            <figure>
+              <a href="https://arxiv.org/abs/2103.03536" target="_blank" rel="noopener">
+                <img src="assets/projected-ensemble.png" alt="Projected ensemble">
+              </a>
+              <figcaption>Emergent quantum state designs from individual many-body wavefunctions</figcaption>
+            </figure>
+            <figure>
+                <a href="https://arxiv.org/abs/2008.05639" target="_blank" rel="noopener">
+                <img src="assets/surgery.png" alt="Surgery of loops">
+                </a>
+                <figcaption>Fractional Integration and Optimal Estimates for Elliptic Systems</figcaption>
+            </figure>
+        </div>
+      </section>
+
+      <section id="teaching" class="card">
+        <h2>Teaching</h2>
+        <div class="teaching-content">
+          <div class="current-courses">
+            <h3>Current</h3>
+            <ul>
+              <li>MATH 513, Introduction to PDE (Fall 2025)</li>
+            </ul>
+          </div>
+          <div class="past-courses">
+            <h3>Past</h3>
+            <ul>
+              <li>18.152, Introduction to PDE (Fall 2024, MIT)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Felipe Hernández</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[','\\]']]
+        },
+        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+      };
+    </script>
+    <script async id="mathjax" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+  </html>
+
+
